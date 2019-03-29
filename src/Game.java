@@ -36,7 +36,11 @@ public class Game extends JFrame {
 			Unit unit = new Unit("U" + (i + 1));
 			units.add(unit);
 		}
-		// Add Legacy Units here
+
+		for(int i=0; i<10; i++){
+			Adapter ap = new Adapter("Legacy" + (i + 1));
+			units.add(ap);
+		}
 	}
 
 	private void start() {
